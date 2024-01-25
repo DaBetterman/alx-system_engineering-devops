@@ -4,7 +4,7 @@
 minutes=0
 hours=0
 
-while true
+while [ "$hours" -le 12 ]
 do
     if [ "$minutes" -eq 0 ]
     then
