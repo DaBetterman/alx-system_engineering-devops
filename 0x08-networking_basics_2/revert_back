@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script reverts a configured Ubuntu server as follows:
+# **** localhost resolves to 127.0.0.1
+# **** facebook.com resolves to 102.132.99.35
+
+# Backup the original hosts file
+sudo cp /etc/hosts /etc/hosts.bak
+
+# Create a new hosts file with the required changes
+echo "127.0.0.1	localhost" | sudo tee /etc/hosts > /dev/null
+echo "102.132.99.35	facebook.com" | sudo tee -a /etc/hosts > /dev/null
+
+echo "Reverted hosts file successfully!"
