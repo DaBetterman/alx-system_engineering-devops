@@ -1,0 +1,17 @@
+I have added another server and a load balancer to redirect traffic evenly to both servers. The L.B. uses a Round Robin Distributions which is clearly explained within the diagram. I now have to Databases which one is a master and the other one is a slave.
+
+### Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both?
+
+* Active-Active is when 2 load balancers are working together. Active-Passive is when the one LB is actively working while the other one is standing by just in case of the active LB has a failure and then it will kick in.
+
+### How a database Primary-Replica (Master-Slave) cluster works?
+
+* The master DB handles all the write functions which is create, update and delete insertions while the slave(replica) DB picks up when one of these insertions happens and stores a backup of it on the slave DB. When a read operation happens it gets read from the slave database.
+
+### What is the difference between the Primary node and the Replica node in regard to the application?
+
+* The same as the answer above.
+
+### SPOF (Single Point Of Failure)
+
+* No backup of LB if it fails. No SSL encryption, firewall and monitoring software.

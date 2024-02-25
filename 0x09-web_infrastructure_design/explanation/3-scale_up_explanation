@@ -1,0 +1,6 @@
+### For every additional element, why you are adding it?
+
+* Added an additional LB with a cluster load algorithm (A rithm for two LB's)
+* Also added another monitoring software with the addional LB
+* Moved the SSL encryption to be used after the load balancer has completed.
+* By doing these actions I have constructed my Web Infrastructure to be able to handle scaleability and keep track of each vital component to prevent serious delays.
