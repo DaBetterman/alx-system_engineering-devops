@@ -1,0 +1,41 @@
+### For every additional element, why you are adding it?
+
+* Added a firewall after DNS to prevent any unwanted traffic from the internet.
+* Include SSL certificate to encrypt data.
+* Added Sumo Logic monitoring software to monitor the health of the LB and addionally added 2 more at both servers aswell.
+* Added two extra firewalls before the server as an extra layer of protection.
+
+### What are firewalls for?
+
+* Firewalls act as security guards at a night club. They prevent any unauthorized access, malicious attacks and unwanted traffic to your systems
+
+### Why is the traffic served over HTTPS?
+
+* The 'S' in HTTPS is for secure which encrypts the data while in transport preventing eavesdropping, tampering, or interception from attackers.
+
+### What monitoring is used for?
+
+* To monitor the health of the system by checking the storage capacity, networks and the behavior of the system and displays it as a log file to the developer.
+
+### How the monitoring tool is collecting data?
+
+* It can collects data locally via Agent software installed on individual servers.
+* It can do it remotely via SSH to collect data from the servers.
+* By using API from Third Party Systems, applications or cloud services.
+* Using logs to check the system and alert if anything looks sispicious or strange.
+
+### Explain what to do if you want to monitor your web server QPS?
+
+* By installing a monitoring software tool which can handle the queries from the users or clients.
+
+### Why terminating SSL at the load balancer level is an issue?
+
+* By doing that it will increase the risk of exposure of the data in transit. The data will not be encrypted.
+
+### Why having only one MySQL server capable of accepting writes is an issue?
+
+* If the server fails then it is prone to risks of limitations, scaleability constraints and data redundancy
+
+### Why having servers with all the same components (database, web server and application server) might be a problem?
+
+* It is not setup for backup purposes or failover mechanism in case SPOF occures.

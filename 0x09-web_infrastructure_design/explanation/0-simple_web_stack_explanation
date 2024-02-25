@@ -1,0 +1,33 @@
+Created a simple web infrastructure design where the user types in ```www.foobar.com```. Once the request has been sent it will go to the DNS(Domain Main System) which changes the url to an IP address and uses the IP address to look for the Server or servers involved. Once received the user will either get an error or the website will be displayed.
+
+### What is a server?
+
+* A server is like a big computer that stores and shares information with other computers.
+
+### What is the role of the domain name?
+
+* It is a unique name that will allow users to connect directly to your website. It is also easier to remember than an IP address.
+
+### What type of DNS record ``www`` is in ``www.foobar.com``?
+
+* The record helps to point the domain name to the actual location of the website.
+
+### What is the role of the web server?
+
+* It handles requests from users' browsers and sends back the appropriate web pages, images, videos, or other content that users want to see.
+
+### What is the role of the application server?
+
+* The application server handles tasks like running software programs, handling user input, and accessing databases.
+
+### What is the role of the database?
+
+* The database is like a library where information is stored in an organized way. It stores all the data needed for a website or application, such as user accounts, product details, or messages.
+
+### What is the server using to communicate with the computer of the user requesting the website?
+
+* HTTP is a protocol which allows the server to send web pages and other content to the user's web browser when they request a website.
+
+### What is SPOF and what are the issues with this infrastructure?
+
+* SPOF(Single Point Of Failure) would be the fact that everything is running on a single server without backup. No load balancers to direct traffic so the server could become overwhelmed. Updating the website will require you to take the server offline temporary which will lead to downtime for users.
