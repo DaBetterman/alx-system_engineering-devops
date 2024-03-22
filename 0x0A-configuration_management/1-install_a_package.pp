@@ -3,7 +3,7 @@
 # By using the ensure attribute I am making
 # sure that the set version will be installed.
 
-package { 'puppet-lint':
+package { 'flask':
   ensure   => '2.1.0',
-  provider => 'gem',
+  provider => 'pip3',
 }
