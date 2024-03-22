@@ -1,44 +1,46 @@
+# Configuration management
 
-<h1 align="center">
- alx-system_engineering-devops
-</h1>
+![configuration_management](https://wac-cdn.atlassian.com/dam/jcr:f4635478-48a1-45d1-9b2f-43d14b2666ba/Configuration-management-tools-2x.png?cdnVersion=690)
 
-<p align="center">
-   📄 🚀
-</p>
+> Configuration management is a systems engineering process for establishing consistency of a product’s attributes throughout its life.
 
-<p align="center">
-  <strong>
-    0x0A-configuration_management 
-  </strong>
-</p>
+Puppet is a tool that helps you manage and automate the configuration of servers. When you use Puppet, you define the desired state of the systems in your infrastructure that you want to manage.
 
-<p align="center">
-Configuration management is like having a plan to keep track of all the changes. It helps everyone know what piece goes where, who changed what, and when they did it.<br>
-So, if someone accidentally knocks down part of the code, you can look at the plan and easily fix it because you know exactly how it's supposed to be built.
-</p>
-<p align="center">
-  <a href="https://github.com/DaBetterman/alx-low_level_programming/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="alx-low_level_programming is released under the MIT license." />
-  </a>
-  
-  <a href="https://circleci.com/gh/DaBetterman/alx-low_level_programming">
-    <img src="https://circleci.com/gh/gatsbyjs/gatsby.svg?style=shield" alt="Current CircleCI build status." />
-  </a>
- 
-  <a href="https://github.com/DaBetterman/alx-low_level_programming/graphs/traffic">
-   <img src="https://img.shields.io/npm/dm/gatsby.svg" alt="Downloads per month on " />
- </a>
-  <a href="https://github.com/DaBetterman/alx-low_level_programming/graphs/traffic">
-    <img src="https://img.shields.io/npm/dt/gatsby.svg" alt="Total downloads on npm." />
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=Da_Betterman">
-    <img src="https://img.shields.io/twitter/follow/Da_Betterman.svg?label=Follow%20@Da_Betterman" alt="Follow @Da_Betterman" />
-  </a>
- 
- <a href="https://img.shields.io/github/stars/DaBetterman/alx-low_level_programming?style=social">
-  <img src="https://img.shields.io/github/stars/DaBetterman/alx-low_level_programming?style=social" alt="Stars" />
- </a>
-</p>
-### Visitors Count
-<img align="left" src = "https://profile-counter.glitch.me/alx-low-level/count.svg" alt ="Loading">
+![puppet](https://miro.medium.com/max/720/1*j0RHN3oXzOfXWl7XeLzxZw.webp)
+
+Obviously writing Puppet code for your infrastructure requires an investment of time and energy, but in the long term, it is for sure a must-have.
+
+## Project Requirements
+
+- All your files will be interpreted on `Ubuntu 20.04 LTS`
+- All your files should end with a new line
+- A __README.md__ file at the root of the folder of the project is mandatory
+- Your Puppet manifests must pass `puppet-lint version 2.1.1` without any errors
+- Your Puppet manifests must run without error
+- Your Puppet manifests first line __must be a comment__ explaining what the Puppet manifest is about
+- Your Puppet manifests files must end with the extension __.pp__
+
+## Installing puppet and puppet-lint on ubuntu
+
+### A video says it all
+__Watch the video below to get a full grasp about tackling the project__
+
+_Click the play video to watch video_ [Play video](https://youtu.be/YJyzEnXSsc8)
+
+### Commands on Terminal
+```bash
+
+$ apt-get update && upgrade -y
+
+$ sudo apt-get install -y ruby=1:2.7+1 --allow-downgrades
+
+$ sudo apt-get install -y ruby-augeas
+
+$ sudo apt-get install -y ruby-shadow
+
+$ sudo apt-get install -y puppet
+
+#installs puppet linter
+$ gem install puppet-lint
+```
+__Follow the above instructions to install puppet and puppet-linter then watch the video to enable you understand how to get started with the task__
