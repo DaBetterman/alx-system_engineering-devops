@@ -2,10 +2,9 @@
 # A Bash script that creates an RSA key pair.
 # Name must be school, number of bits 4096 &
 # must be protected by passphrase "betty".
-ssh-keygen -t rsa -b 4096 -N "betty" -f ~/.ssh/school
+ssh-keygen -b 4096 -f school -N betty
 
-# -t rsa: Specify the type of key being created
 # -b 4096: Specify the number of bit in the key
 # -n "betty": Specify the passphrase to use for
             # encrypting the private key
-# -f ~/.ssh/school: Specify the filename of the key file
+# -f school: Specify the filename of the key file
