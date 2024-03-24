@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SSH client configuration
-# This configuration specifies settings for connecting to the server with IP address 3.85.148.212.
+# This configuration specifies settings for connecting to the server with IP address 54.175.224.184.
 # IdentityFile specifies the private key to use for authentication.
 # In this case, it points to the private key located at ~/.ssh/school.
 # PreferredAuthentications specifies the preferred order of authentication methods.
@@ -8,7 +8,7 @@
 # PasswordAuthentication specifies whether password authentication should be allowed.
 # Setting it to "no" disables password authentication, ensuring only public key authentication is used.
 
-Host 3.85.148.212
+Host 54.175.224.184
 IdentityFile ~/.ssh/school
 PreferredAuthentications publickey
 PasswordAuthentication no

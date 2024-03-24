@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # A Bash script that uses ssh to connect to my
-# server (3.85.148.212) using the private key ~/.ssh/school with the user ubuntu.
+# server (54.175.224.184) using the private key ~/.ssh/school with the user ubuntu.
 
-ssh -i ~/.ssh/school2 ubuntu@3.85.148.212
+ssh -i ~/.ssh/school ubuntu@54.175.224.184
