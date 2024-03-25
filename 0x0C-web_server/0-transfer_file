@@ -1,4 +1,4 @@
-#!/usr/binenv bash
+#!/usr/bin/env bash
 # A Bash script that transfers a file from our client to a server.
 
 # This is a function that will get executed when the (argc)
