@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
-#Run Apache on the holbertonschool/265-0 Docker container
-echo "ServerName localhost" >> /etc/apache2.conf
-service apache2 start
+
+
+docker exec -it <container_id> /bin/bash
+
+cat /etc/apache2/sites-available/000-default.conf
+
+if systemctl is-active --quiet apache2; then
+    echo "Apache is running."
+else
+    echo "Apache is not running. Starting Apache..."
+    systemctl start apache2
+fi
+
+apache2ctl configtest
+
+systemctl restart apache2
+
+exit
